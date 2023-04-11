@@ -8,9 +8,18 @@ st.set_page_config(layout="wide")
 
 ##HEADING
 image = Image.open('data/ASHAFMLOGO2.png')
-st.image(image)
+col1, col2, col3 = st.columns(3)
 
+with col1:
+    st.write(' ')
 
+with col2:
+    st.image(image)
+
+with col3:
+    st.write(' ')
+
+st.write("  ")
 
 ##ASHA FM COUNTDOWN
 video_file = open('data/COUNTDOWN.mp4', 'rb')
@@ -46,13 +55,21 @@ st.markdown("""
 ##DESCRIPTION/BACKGROUND TEXT
 col1, col2, col3 = st.columns(3)
 with col1:
+    image = Image.open('data/WHATISASHA.png')
+    st.image(image)
+    st.write("  ")
+    image = Image.open('data/THESOUND.png')
+    st.image(image)
     st.write("  ")
 
 with col2:
-    image = Image.open('data/solidarity.png')
+    image = Image.open('data/PLATFORM.png')
     st.image(image)
+    st.write("  ")
 
 with col3:
+    image = Image.open('data/CIRCLE.png')
+    st.image(image)
     st.write("  ")
 
 
