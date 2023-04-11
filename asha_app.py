@@ -7,17 +7,13 @@ st.set_page_config(layout="wide")
 
 
 ##HEADING
-file_ = open("data/movinglogo.gif", "rb")
-contents = file_.read()
-data_url = base64.b64encode(contents).decode("utf-8")
-file_.close()
-st.markdown(f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">',
-unsafe_allow_html=True)
+image = Image.open('data/ASHAFMLOGO2.png')
+st.image(image)
 
 
 
-##ASHA FM DEMO DAY VIDEO
-video_file = open('data/asha-one.mp4', 'rb')
+##ASHA FM COUNTDOWN
+video_file = open('data/COUNTDOWN.mp4', 'rb')
 video_bytes = video_file.read()
 st.video(video_bytes)
 
