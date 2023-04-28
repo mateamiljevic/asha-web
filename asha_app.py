@@ -34,6 +34,9 @@ st.write("  ")
 ##DESCRIPTION/BACKGROUND FORMAT
 st.markdown("""
 <style>
+body {
+    background-color: #f2f2f2;
+}
 .mid-font {
     font-size:13px;
     font-weight: thin;
