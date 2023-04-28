@@ -179,7 +179,7 @@ showPyplotGlobalUse = true
 [theme]
 
 # The preset Streamlit theme that your custom theme inherits from. One of "light" or "dark".
-base = dark
+#base = dark
 
 # Primary accent color for interactive elements.
 # primaryColor =
@@ -194,4 +194,4 @@ secondaryBackgroundColor = 000000
 textColor = FFFFFF
 
 # Font family for all text in the app, except code blocks. One of "sans serif", "serif", or "monospace".
-#font = 
+#font =
